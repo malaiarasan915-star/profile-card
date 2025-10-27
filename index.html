@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/food_icon.png">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .food-heading {
+            text-align: center;
+            padding: 10px;
+            color: green;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .menu {
+            width: 370px;
+            height: 330px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            border: 2px solid orange;
+            margin: 10px 20px;
+        }
+
+        .menu img {
+            width: 100px;
+            height: 100px;
+            border: 3px solid green;
+            border-radius: 50%;
+            margin-left: 120px;
+            margin-top: 10px;
+        }
+
+        .menu h2 {
+            text-align: center;
+        }
+
+        .menu p {
+            font-size: 15px;
+            text-align: justify;
+            padding: 0px 20px;
+            margin-bottom: 30px;
+        }
+
+        .buy-btn {
+            text-decoration: none;
+            color: orange;
+            border: 2px solid orange;
+            padding: 10px 30px;
+            margin-left: 120px;
+        }
+
+        .buy-btn:hover {
+            background-color: green;
+            border: 2px solid green;
+            color: white;
+        }
+
+        /* media query */
+        @media only screen and (max-width: 768px) {
+            body {
+                background-color: lightblue;
+            }
+
+            .resp-food {
+               text-align: center;
+            }
+
+            .resp-card {
+                display: flex;
+                flex-direction: column;
+                margin-left: 176px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="food-heading resp-food">Food Menu</h1>
+        <div class="card resp-card">
+            <!-- 1 menu -->
+            <div class="menu">
+                <img src="./assets/images/briyani.jpg" alt="briyani" width="100" height="100">
+                <h2>Briyani</h2> <br>
+                <p>Biryani is a popular South Asian mixed rice dish made with spices, rice (typically basmati), and a
+                    protein like meat, fish, or eggs, or vegetables. </p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <!-- 2 menu -->
+            <div class="menu">
+                <img src="./assets/images/ice_briyani.jpg" alt="malai" width="100" height="100">
+                <h2>Ice Briyani</h2><br>
+                <p>Ice biryani, also known as Pazhaya Sadam or Pazhaya Soru, is a traditional South Indian fermented
+                    rice dish made by soaking leftover cooked rice in water</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <!-- 3 menu -->
+            <div class="menu">
+                <img src="./assets/images/idly.jpg" alt="malai" width="100" height="100">
+                <h2>Idly</h2><br>
+                <h4></h4>
+                <p>Idli is a South Indian steamed rice cake made from a fermented batter of rice and urad dal (black
+                    lentils), resulting in a soft, spongy, and fluffy texture. </p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
